@@ -18,7 +18,7 @@ def get_config():
     return config
 
 
-def get_token():
+def get_jwt():
     config = get_config()
     if "token" not in config:
         raise EnvironmentError("No token found in config.yaml")
