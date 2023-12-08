@@ -24,3 +24,10 @@ def get_jwt():
         raise EnvironmentError("No token found in config.yaml")
 
     return config["token"]
+
+def get_save_path():
+    config = get_config()
+    if "save_path" not in config:
+        raise EnvironmentError("No save_path found in config.yaml")
+
+    return config["save_path"]
