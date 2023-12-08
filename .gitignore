@@ -4,4 +4,6 @@ venv
 # PyCharm
 .idea
 
+# Generated files
 config.yaml
+data
