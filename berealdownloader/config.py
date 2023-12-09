@@ -25,6 +25,7 @@ def get_jwt():
 
     return config["token"]
 
+
 def get_save_path():
     config = get_config()
     if "save_path" not in config:

@@ -6,14 +6,12 @@ import requests
 
 def refresh_access_token(refresh_token: str):
     url = "https://auth.bereal.team/token"
-    params = {
-        "grant_type": "refresh_token"
-    }
+    params = {"grant_type": "refresh_token"}
     body = {
         "grant_type": "refresh_token",
         "client_id": "ios",
         "client_secret": "962D357B-B134-4AB6-8F53-BEA2B7255420",
-        "refresh_token": refresh_token
+        "refresh_token": refresh_token,
     }
 
     response = requests.post(url, params=params, json=body)
